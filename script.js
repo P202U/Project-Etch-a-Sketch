@@ -22,4 +22,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
         container.style.setProperty('--num-of-divs', size);
     };
+
+    const squareDivs = () => {
+        const userInput = prompt('Enter the number of squares per row/column?', 16);
+
+        if (userInput === null) return;
+
+        const squares = parseInt(userInput);
+
+        if (isNaN(squares) || squares <= 0 || squares >= 100) {
+            alert('Please enter a valid number between 1 and 100.');
+            return;
+        }
+
+        return squares;
+    };
 });
