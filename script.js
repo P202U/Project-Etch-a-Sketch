@@ -2,6 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.container');
+    const button = document.querySelector('button');
+
+    let numSquares = 0;
 
     const createGrid = (size) => {
 
@@ -37,4 +40,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         return squares;
     };
+
+    numSquares = squareDivs();
+
+    createGrid(numSquares);
+
+    button.addEventListener('click', () => {
+        numSquares = squareDivs();
+
+        createGrid(numSquares);
+    });
 });
