@@ -15,11 +15,11 @@ This is a simple web application that allows users to create a grid of squares a
 1. **Setup:**
    - Clone the repository:
      ```bash
-     git clone https://github.com/your-username/dynamic-grid-painter.git
+     git clone https://github.com/your-username/Project-Etch-a-Sketch.git
      ```
    - Navigate into the project directory:
      ```bash
-     cd dynamic-grid-painter
+     cd Project-Etch-a-Sketch
      ```
 
 2. **Run Locally:**
