@@ -34,7 +34,7 @@ This is a simple web application that allows users to create a grid of squares a
    - Move the mouse over any square in the grid to change its background color.
    - The color changes based on the mouse position relative to the square.
 
-5. **Painting:** [Sketch](https://p202u.github.io/Project-Etch-a-Sketch/)
+5. **Live Preview:** [Sketch](https://p202u.github.io/Project-Etch-a-Sketch/)
 
 ## Contributing:
 Contributions are welcome! If you have any ideas, improvements, or fixes, feel free to fork the repository and submit a pull request.
