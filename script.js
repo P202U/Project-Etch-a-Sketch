@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const container = document.querySelector('.container');
     const button = document.querySelector('button');
     let numSquares = 0;
+    let opacity = 0;
 
     const initializeGrid = () => {
         numSquares = getGridSizeFromUser();
@@ -43,6 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
         div.style.height = `${squareSize}%`;
 
         div.addEventListener('mousemove', mouseMoveBgColor);
+        div.addEventListener('mouseleave', mouseMoveOpacity);
 
         return div;
     };
@@ -51,6 +53,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const div = e.target;
         const { offsetX, offsetY } = e;
         div.style.backgroundColor = `rgb(${offsetX}, ${offsetY}, ${Math.abs(offsetX - offsetY)})`;
+    };
+
+    const mouseMoveOpacity = (e) => {
+        const div = e.target;
+
+        opacity = +div.style.opacity;
+
+        if (opacity >= 1) {
+            opacity = 1;
+        } else {
+            opacity += 0.1;
+        }
+
+        div.style.opacity = opacity;
     };
 
     const clearContainer = () => {

@@ -18,6 +18,10 @@ body {
     height: 100vh;
 }
 
+div {
+    transition: opacity 0.3s ease;
+}
+
 button {
     position: absolute;
     top: 0;
